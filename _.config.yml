@@ -1,5 +1,8 @@
 plugins:
   - jekyll-relative-links
+ relative_links:
+  enabled: false
+  collections: false
  include:
   - sample_notes.md
   

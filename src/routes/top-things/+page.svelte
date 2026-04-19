@@ -1,35 +1,33 @@
 <script lang="ts">
   const things = [
     {
-      category: 'tools',
+      category: 'Tools',
       items: [
-        { name: 'vim', description: 'text editor' },
-        { name: 'tmux', description: 'terminal multiplexer' },
-        { name: 'svelte', description: 'framework' },
-        { name: 'rust', description: 'language' },
-        { name: 'neovim', description: 'editor' },
-        { name: 'alacritty', description: 'terminal' },
-        { name: 'fish', description: 'shell' },
-        { name: 'btop', description: 'system monitor' }
+        { name: 'Neovim', description: 'build your own text editor' },
+        { name: 'Intellij', description: 'probably anything from Jetbrains' },
+        { name: 'starship-rs', description: 'Make shell nicer' },
+        { name: 'superfile', description: '' },
+        { name: 'Ghostty | Konsole', description: '' },
       ]
     },
     {
-      category: 'web',
+      category: 'Games',
       items: [
-        { name: 'hacker news', description: 'news' },
-        { name: 'youtube', description: 'videos' },
-        { name: ' Mard', description: 'wiki' },
-        { name: 'github', description: 'code' }
+        { name: 'Overwatch', description: 'Since season ow1:s2' },
+        { name: 'Dragon Age', description: '' },
+        { name: 'Mass Effect', description: 'The trilogy' },
+        { name: 'Transistor', description: 'Turn base re-imagined' },
+        { name: 'Summoner', description: 'Sahagani' },
       ]
     },
     {
-      category: 'games',
+      category: 'Gadgets',
       items: [
-        { name: 'civ iv', description: 'strategy' },
-        { name: 'factorio', description: 'automation' },
-        { name: 'rimworld', description: 'simulation' }
+        { name: 'ElecFox Inky75', description: 'aluminum or nothing' },
+        { name: 'G304', description: 'Charged for months' },
+        { name: 'Letshuoer S08', description: '' },
       ]
-    }
+    },
   ];
 </script>
 
@@ -40,7 +38,7 @@
 <svelte:window onkeydown={(e) => { if (e.key === 'Backspace' && (e.target as HTMLElement).tagName !== 'INPUT') window.location.href = '/'; }} />
 
 <div class="min-h-screen bg-[#0d0d0d] font-mono p-8 flex justify-center">
-  <article class="max-w-2xl w-full">
+  <article class="max-w-4xl w-full">
     <a href="/" class="text-[#d5b87c] hover:underline">← back</a>
     
     <h1 class="text-[#e8dfc7] text-4xl tracking-tight mt-8 mb-8">top things</h1>
@@ -54,7 +52,11 @@
               <li class="flex items-baseline gap-3 py-1">
                 <span class="text-[#d5b87c]">❯</span>
                 <span class="text-[#888]">{item.name}</span>
-                <span class="text-[#444] text-sm">// {item.description}</span>
+                <span class="text-[#444] text-sm">
+                  {#if item.description}
+                    //  {item.description}
+                  {/if}
+                </span>
               </li>
             {/each}
           </ul>

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+body {
+  @apply bg-[#0d0d0d] font-mono;
+}

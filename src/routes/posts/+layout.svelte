@@ -2,11 +2,11 @@
   import { posts } from '$lib/posts';
   import { page as pageState } from '$app/state';
   import { setContext } from 'svelte';
-   
+
   let { children } = $props();
   let currentSlug = $derived(pageState.params.slug);
   let filter = $state('');
-  
+
   function handleKeydown(e: KeyboardEvent) {
     if (e.key === '/') {
       e.preventDefault();
@@ -15,19 +15,22 @@
       window.location.href = '/';
     }
   }
-  
+
   let groupedPosts = $derived(
     Object.entries(
       posts
-        .filter(p => filter === '' || p.title.toLowerCase().includes(filter.toLowerCase()))
-        .reduce((acc, post) => {
-          if (!acc[post.category]) acc[post.category] = [];
-          acc[post.category].push(post);
-          return acc;
-        }, {} as Record<string, typeof posts>)
+        .filter((p) => filter === '' || p.title.toLowerCase().includes(filter.toLowerCase()))
+        .reduce(
+          (acc, post) => {
+            if (!acc[post.category]) acc[post.category] = [];
+            acc[post.category].push(post);
+            return acc;
+          },
+          {} as Record<string, typeof posts>
+        )
     )
   );
-  
+
   setContext('posts', { posts });
 </script>
 
@@ -42,25 +45,25 @@
     <div class="text-xl tracking-tighter text-[#e8dfc7] mb-8">
       <a href="/" class="text-[#d5b87c] hover:underline">← home</a>
     </div>
-    
+
     <input
       id="filter"
       type="text"
       placeholder="filter..."
       bind:value={filter}
-      class="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded px-2 py-1 text-sm text-[#888] focus:outline-none focus:border-[#d5b87c] mb-4"
-    />
-    
+      class="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded px-2 py-1 text-sm text-[#888] focus:outline-none focus:border-[#d5b87c] mb-4" />
+
     {#each groupedPosts as [category, categoryPosts]}
       <div class="mb-4">
         <h2 class="text-[#666] text-sm uppercase tracking-wider mb-2">{category}</h2>
         <ul class="space-y-2">
           {#each categoryPosts as post (post.slug)}
             <li>
-              <a 
-                href="/posts/{post.category}/{post.slug}" 
-                class="block {post.slug === currentSlug ? 'text-[#d5b87c]' : 'text-[#888] hover:text-[#d5b87c]'}"
-              >
+              <a
+                href="/posts/{post.category}/{post.slug}"
+                class="block {post.slug === currentSlug
+                  ? 'text-[#d5b87c]'
+                  : 'text-[#888] hover:text-[#d5b87c]'}">
                 {post.title}
               </a>
             </li>

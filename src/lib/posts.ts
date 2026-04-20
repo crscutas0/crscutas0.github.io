@@ -1,14 +1,12 @@
 export const posts = [
   {
     category: "dev",
-    slug: "hello-world",
-    title: "hello world",
-    date: "2024-01-20",
+    slug: "tell-dont-ask",
+    title: "Tell, Don't Ask",
   },
   {
     category: "dev",
-    slug: "vim-macros",
-    title: "vim macros",
-    date: "2024-01-10",
+    slug: "slap",
+    title: "SLAP - Single Level of Abstractionn Principle",
   },
 ];

@@ -2,7 +2,7 @@
 @plugin '@tailwindcss/typography';
 
 body {
-  @apply bg-[#0d0d0d] font-mono text-[#888];
+  @apply bg-[#0d0d0d] font-mono text-[#d4d4d8];
 }
 
 h1,
@@ -19,9 +19,34 @@ h1 {
 }
 
 h2 {
-  @apply text-xl mb-3;
+  @apply text-xl mt-8;
 }
 
 .quote {
   @apply text-[#666] leading-relaxed;
+}
+
+b {
+  @apply text-slate-600;
+}
+
+a.posts {
+  @apply text-emerald-800;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+ul li {
+  display: list-item;
+}
+
+pre {
+  @apply bg-[#111] border border-[#1f1f1f] rounded-xl p-4 overflow-x-auto text-sm leading-relaxed;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }

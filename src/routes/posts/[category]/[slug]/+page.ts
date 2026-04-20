@@ -13,4 +13,3 @@ export async function load({ params }) {
     throw error(404, "Post not found");
   }
 }
-

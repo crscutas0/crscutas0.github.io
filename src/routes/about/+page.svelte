@@ -4,7 +4,8 @@
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+/>
 
 <svelte:head>
   <title>about - ./crscutas</title>
@@ -12,9 +13,10 @@
 
 <svelte:window
   onkeydown={(e) => {
-    if (e.key === 'Backspace' && (e.target as HTMLElement).tagName !== 'INPUT')
-      window.location.href = '/';
-  }} />
+    if (e.key === "Backspace" && (e.target as HTMLElement).tagName !== "INPUT")
+      window.location.href = "/";
+  }}
+/>
 
 <div class="min-h-screen bg-[#0d0d0d] font-mono p-8 flex justify-center">
   <div class="flex flex-col gap-y-10 max-w-2xl w-full">
@@ -23,8 +25,8 @@
     <section>
       <h1>About</h1>
       <p class="text-lg leading-relaxed">
-        Resumes are nice but limited. I also have not done enough public projects to fill a
-        portfolio. So blogsite site it is!
+        Resumes are nice but limited. I also have not done enough public
+        projects to fill a portfolio. So blogsite site it is!
       </p>
     </section>
 
@@ -33,11 +35,16 @@
       <ul class="flex flex-col gap-x-8 gap-y-2">
         <li class="flex items-baseline gap-3 py-1">
           <i style="color:white" class="devicon-github-original"></i>
-          <a href="https://github.com/crscutas0" target="_blank">github.com/crscutas0</a>
+          <a href="https://github.com/crscutas0" target="_blank"
+            >github.com/crscutas0</a
+          >
         </li>
         <li class="flex items-baseline gap-3 py-1">
           <i style="color:white" class="devicon-linkedin-plain"></i>
-          <a href="https://www.linkedin.com/in/cristopher-cutas-352046a7/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/cristopher-cutas-352046a7/"
+            target="_blank"
+          >
             linkedin.com/in/cristopher-cutas
           </a>
         </li>
@@ -47,8 +54,8 @@
     <section>
       <h2>Hey! by the way...</h2>
       <p>
-        Nothing I say here are my own thoughts and is no way reflective of the views of my
-        employers.
+        The views and opinions expressed in this content are my own and do not
+        necessarily reflect those of my employer.
       </p>
     </section>
 

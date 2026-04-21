@@ -23,7 +23,7 @@ h2 {
 }
 
 .quote {
-  @apply text-[#666] leading-relaxed;
+  @apply text-[#666] leading-relaxed border-l-4 border-slate-600 pl-4;
 }
 
 b {
@@ -34,12 +34,12 @@ a.posts {
   @apply text-emerald-800;
 }
 
-ul {
+ul.posts {
   list-style-type: disc;
   padding-left: 1.5em;
 }
 
-ul li {
+ul.posts li {
   display: list-item;
 }
 

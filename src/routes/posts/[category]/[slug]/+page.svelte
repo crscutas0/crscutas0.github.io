@@ -1,10 +1,13 @@
 <script lang="ts">
-  let { data } = $props();
+let { data } = $props();
 </script>
 
 <svelte:head>
   <title>{data.title} - ./crscutas</title>
-  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css"
+    rel="stylesheet"
+  />
 </svelte:head>
 
 <article class="max-w-2xl">

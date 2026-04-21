@@ -1,6 +1,7 @@
-{
-  "svelteSortOrder": "options-styles-scripts-markup",
-  "svelteBracketNewLine": false,
-  "svelteAllowShorthand": false,
-  "svelteIndentScriptAndStyle": false
-}
+plugins:
+  - prettier-plugin-svelte
+htmlWhitespaceSensitivity: strict
+svelteSortOrder: options-styles-scripts-markup
+svelteBracketNewLine: false
+svelteAllowShorthand: false
+svelteIndentScriptAndStyle: false

@@ -114,9 +114,8 @@ def main():
 
   <h2>What This Principle Really Means</h2>
 
-  <div class="flex flex-col gap-4">
-    <p>Tell, Don’t Ask doesn’t mean you should never access data.</p>
-    <p>It means:</p>
+  <div>
+    Tell, Don’t Ask doesn’t mean you should never access data. It means:
     <ul class="posts">
       <li>Avoid pulling data out just to make decisions elsewhere </li>
       <li>Prefer telling objects to perform actions</li>

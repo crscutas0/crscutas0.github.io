@@ -2,7 +2,7 @@
 @plugin '@tailwindcss/typography';
 
 body {
-  @apply bg-[#0d0d0d] font-mono text-[#d4d4d8];
+  @apply bg-[#121212] font-mono text-[#E0E0E0];
 }
 
 h1,
@@ -15,11 +15,11 @@ h6 {
 }
 
 h1 {
-  @apply text-4xl tracking-tight mt-8 mb-8;
+  @apply text-4xl mt-8;
 }
 
 h2 {
-  @apply text-xl mt-8;
+  @apply text-2xl mt-8;
 }
 
 .quote {

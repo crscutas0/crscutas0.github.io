@@ -10,4 +10,3 @@ let { data } = $props();
   <p class="text-[#444] text-sm">{data.date}</p>
   <data.content />
 </article>
-

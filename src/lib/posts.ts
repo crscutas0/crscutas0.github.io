@@ -19,7 +19,7 @@ export const devPosts: Post[] = [
 ];
 
 export const religionPosts: Post[] = [
-  { category: "religion", slug: "faith-and-reason", title: "Faith and Reason" },
+  { category: "Beliefs", slug: "life-after", title: "Life after" },
 ];
 
 export const politicsPosts: Post[] = [];

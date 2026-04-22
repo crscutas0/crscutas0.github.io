@@ -1,7 +1,7 @@
 <script module>
 import CodeSnip from "$lib/components/ui/CodeSnip.svelte";
 
-export const title = "The problem with Utils";
+export const title = "The problem with utils";
 export const date = "April 21, 2026";
 
 const sampleCode = `
@@ -26,7 +26,7 @@ class PhilippineMobileNumber:
 ...(rest of the code omitted)`;
 </script>
 
-<h1>The problem with Utils</h1>
+<h1>{title}</h1>
 
 <div class="flex flex-col">
   <div>
@@ -96,8 +96,8 @@ class PhilippineMobileNumber:
     this concept do?”, we ask “where should I put this function?”
   </p>
 
+  <h2>Before creating a utility function, consider this: </h2>
   <div>
-    Before creating a utility function, consider:
     <ul class="posts">
       <li>
         Does this logic belong to an existing concept that we have failed to

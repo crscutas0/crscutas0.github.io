@@ -1,6 +1,6 @@
 import { error } from "@sveltejs/kit";
 
-export async function load({ params }) {
+export async function load({ params }: { params: { slug: string } }) {
   try {
     const post = await import(`$lib/dev/${params.slug}.svelte`);
     return {
@@ -13,3 +13,4 @@ export async function load({ params }) {
     throw error(404, "Post not found");
   }
 }
+

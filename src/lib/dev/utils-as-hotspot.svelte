@@ -28,7 +28,7 @@ class PhilippineMobileNumber:
 
 <h1>The problem with Utils</h1>
 
-<div class="flex flex-col gap-8">
+<div class="flex flex-col">
   <div>
     References:
     <ul class="posts">

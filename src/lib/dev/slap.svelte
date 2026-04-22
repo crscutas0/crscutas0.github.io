@@ -37,7 +37,7 @@ def main():
 
 <h1>SLAP - Single Level of Abstraction Principle</h1>
 
-<div class="flex flex-col gap-8">
+<div class="flex flex-col">
   <p>
     This document is based from
     <a

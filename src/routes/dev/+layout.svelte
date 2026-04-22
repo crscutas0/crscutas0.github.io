@@ -1,11 +1,12 @@
 <script lang="ts">
-import { posts } from "$lib/posts";
+import { devPosts as posts } from "$lib/posts";
 import { page as pageState } from "$app/state";
 import { setContext } from "svelte";
 
 let { children } = $props();
 let currentSlug = $derived(pageState.params.slug);
 let filter = $state("");
+let category = "dev";
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.key === "/") {
@@ -41,13 +42,13 @@ setContext("posts", { posts });
 </script>
 
 <svelte:head>
-  <title>posts - ./crscutas</title>
+  <title>{category} - ./crscutas</title>
 </svelte:head>
 
 <svelte:window onkeydown={handleKeydown} />
 
 <div class="min-h-screen bg-[#0d0d0d] font-mono flex">
-  <aside class="w-64 h-screen sticky top-0 p-8 border-r border-[#2a2a2a]">
+  <aside class="w-80 h-screen sticky top-0 p-8 border-r border-[#2a2a2a]">
     <div class="text-xl tracking-tighter text-[#e8dfc7] mb-8">
       <a href="/" class="text-[#d5b87c] hover:underline">← home</a>
     </div>
@@ -57,19 +58,19 @@ setContext("posts", { posts });
       type="text"
       placeholder="filter..."
       bind:value={filter}
-      class="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded px-2 py-1 text-sm text-[#888] focus:outline-none focus:border-[#d5b87c] mb-4"
+      class="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded px-2 py-1 text-sm text-[#888] focus:outline-none focus:border-[#d5b87c]"
     />
 
-    {#each groupedPosts as [category, categoryPosts]}
+    {#each groupedPosts as [group, posts]}
       <div class="mb-4">
         <h2 class="text-[#666] text-sm uppercase tracking-wider mb-2"
-          >{category}</h2
+          >{group}</h2
         >
         <ul class="space-y-2">
-          {#each categoryPosts as post (post.slug)}
+          {#each posts as post (post.slug)}
             <li>
               <a
-                href="/posts/{post.category}/{post.slug}"
+                href="/{category}/{post.slug}"
                 class="block {post.slug === currentSlug
                   ? 'text-[#d5b87c]'
                   : 'text-[#888] hover:text-[#d5b87c]'}"
@@ -87,3 +88,4 @@ setContext("posts", { posts });
     {@render children()}
   </main>
 </div>
+

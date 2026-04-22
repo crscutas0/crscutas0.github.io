@@ -1,7 +1,7 @@
 <script module>
 import CodeSnip from "$lib/components/ui/CodeSnip.svelte";
 
-export const title = "hello world";
+export const title = "Tell, Don't Ask";
 export const date = "April 21, 2026";
 
 const sampleCode = `
@@ -49,7 +49,7 @@ def main():
 
 <h1>Tell, Don't Ask</h1>
 
-<div class="flex flex-col gap-8">
+<div class="flex flex-col">
   <div>
     Refereces:
     <ul class="posts">

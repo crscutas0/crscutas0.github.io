@@ -1,6 +1,6 @@
 <script module>
-  export const title = 'hello world';
-  export const date = '2024-01-20';
+export const title = "hello world";
+export const date = "2024-01-20";
 </script>
 
 <p>First post on this site. Just testing things out.</p>

@@ -1,17 +1,28 @@
-export const posts = [
+export interface Post {
+  category: string;
+  slug: string;
+  title: string;
+}
+
+export const devPosts: Post[] = [
   {
-    category: "dev",
+    category: "code",
     slug: "utils-as-hotspot",
     title: "The problem with Utils",
   },
+  { category: "code", slug: "tell-dont-ask", title: "Tell, Don't Ask" },
   {
-    category: "dev",
-    slug: "tell-dont-ask",
-    title: "Tell, Don't Ask",
-  },
-  {
-    category: "dev",
+    category: "code",
     slug: "slap",
     title: "SLAP - Single Level of Abstractionn Principle",
   },
 ];
+
+export const religionPosts: Post[] = [
+  { category: "religion", slug: "faith-and-reason", title: "Faith and Reason" },
+];
+
+export const politicsPosts: Post[] = [];
+
+export const othersPosts: Post[] = [];
+

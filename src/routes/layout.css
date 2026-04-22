@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-[#e8dfc7];
+  @apply text-mist-500;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h2 {
 }
 
 .quote {
-  @apply text-[#666] leading-relaxed border-l-4 border-slate-600 pl-4;
+  @apply text-mist-300 leading-relaxed border-l-4 border-slate-600 pl-4;
 }
 
 b {

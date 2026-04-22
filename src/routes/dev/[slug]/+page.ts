@@ -2,7 +2,7 @@ import { error } from "@sveltejs/kit";
 
 export async function load({ params }) {
   try {
-    const post = await import(`$lib/posts/${params.slug}.svelte`);
+    const post = await import(`$lib/dev/${params.slug}.svelte`);
     return {
       title: post.title,
       date: post.date,

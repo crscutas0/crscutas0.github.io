@@ -1,16 +1,3 @@
-import { error } from "@sveltejs/kit";
+import { createPostLoader } from "$lib/posts";
 
-export async function load({ params }: { params: { slug: string } }) {
-  try {
-    const post = await import(`$lib/others/${params.slug}.svelte`);
-    return {
-      title: post.title,
-      date: post.date,
-      content: post.default,
-    };
-  } catch (e) {
-    console.error(e);
-    throw error(404, "Post not found");
-  }
-}
-
+export const load = createPostLoader("others");

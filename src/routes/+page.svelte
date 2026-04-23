@@ -224,4 +224,3 @@ const getClasses = (index: number) => {
     {/if}
   </div>
 </div>
-

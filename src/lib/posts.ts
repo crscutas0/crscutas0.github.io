@@ -1,7 +1,25 @@
+import { error } from "@sveltejs/kit";
+
 export interface Post {
   category: string;
   slug: string;
   title: string;
+}
+
+export function createPostLoader(category: string) {
+  return async function load({ params }: { params: { slug: string } }) {
+    try {
+      const post = await import(`$lib/${category}/${params.slug}.svelte`);
+      return {
+        title: post.title,
+        date: post.date,
+        content: post.default,
+      };
+    } catch (e) {
+      console.error(e);
+      throw error(404, "Post not found");
+    }
+  };
 }
 
 export const devPosts: Post[] = [
@@ -25,4 +43,3 @@ export const religionPosts: Post[] = [
 export const politicsPosts: Post[] = [];
 
 export const othersPosts: Post[] = [];
-

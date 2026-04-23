@@ -51,7 +51,7 @@ class PhilippineMobileNumber:
   </p>
 
   <p>
-    This is closely related to the <a class="posts" href="/posts/tell-dont-ask"
+    This is closely related to the <a class="posts" href="/dev/tell-dont-ask"
       >Tell, Don’t Ask principle</a
     >. When you rely too much on utility functions, you often end up “asking”
     for data and processing it elsewhere, instead of letting objects “tell” you

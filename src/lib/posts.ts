@@ -34,6 +34,11 @@ export const devPosts: Post[] = [
     slug: "slap",
     title: "SLAP - Single Level of Abstractionn Principle",
   },
+  {
+    category: "code",
+    slug: "code-quality",
+    title: "Code Quality",
+  },
 ];
 
 export const religionPosts: Post[] = [

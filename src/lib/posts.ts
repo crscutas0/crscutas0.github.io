@@ -26,6 +26,11 @@ export function createPostLoader(category: string) {
 export const devPosts: Post[] = [
   {
     category: "code",
+    slug: "code-quality",
+    title: "Code Quality",
+  },
+  {
+    category: "code",
     slug: "utils-as-hotspot",
     title: "The problem with Utils",
   },
@@ -34,11 +39,6 @@ export const devPosts: Post[] = [
     category: "code",
     slug: "slap",
     title: "SLAP - Single Level of Abstractionn Principle",
-  },
-  {
-    category: "code",
-    slug: "code-quality",
-    title: "Code Quality",
   },
 ];
 

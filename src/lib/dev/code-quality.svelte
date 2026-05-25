@@ -3,7 +3,8 @@ import CodeSnip from "$lib/components/ui/CodeSnip.svelte";
 
 export const title = "Code Quality";
 export const date = "2026-05-24";
-export const description = "What code quality really means, and how to make code simple and easy to read.";
+export const description =
+  "What code quality really means, and how to make code simple and easy to read.";
 
 const jsonImport = `import { StatusHeaders } from '@/data/StatusHeaders';
   export const getAccountStatus = () => StatusHeaders;
@@ -59,33 +60,61 @@ export const AccountPage = () => {
 
 <h1>Code Quality, what does it mean?</h1>
 
+<div>
+  Refereces:
+  <ul class="posts">
+    <li>
+      <a
+        href="https://www.youtube.com/watch?v=SxdOUGdseq4"
+        target="_blank"
+        class="posts">
+        Rich Hickey - Simple made Easy
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://htmx.org/essays/locality-of-behaviour/"
+        target="_blank"
+        class="posts">
+        htmx - Locality of Behavior
+      </a>
+    </li>
+  </ul>
+</div>
+
 <p>
   Dev teams often put high emphasis on code quality, and righfully so. But often
   times it focuses on how it should be written, and the concept of "what" that
   means is often left to "familiarity". This approach is not an obvious problem
-  specially when we the team have defined certain coding standards. However,
-  while these code may lead to a conforming code structure but the actual code
-  might not that desirable.
+  specially when teams have agreed on a coding standard. However, while these
+  code may lead to a conforming code structure the actual code may not be
+  desirable.
 </p>
 
 <p>
-  Code is one component of a system, its structure would be affected by other
-  components such as purpose, framework, environment and so on. When it. Quality
-  generally means the degree to which something possesses desirable
-  characteristics or fulfills its purpose well. To figure out what Quality means
-  when its attached to Code, first we need to narrow down its purpose. For me
-  its the primary source of truth on how the application is meant to behave, in
-  short the base documentation. Since its a documentation, readability would be
-  my primary concern.
+  Code is one component of a larger system. Its structure is influenced not only
+  by the programmer, but also by the framework, runtime environment,
+  architecture, and surrounding constraints.
+</p>
+
+<p>
+  Quality generally refers to the degree to which something possesses desirable
+  characteristics. To understand what “Code Quality” means, we must first
+  understand the purpose of code itself. For me, code is the primary source of
+  truth for how an application is intended to behave. With that, making it easy
+  to read should be one of its qualification. But what does easy mean?
 </p>
 
 <h2>Simple and Easy</h2>
 
 <p class="mb-7">
-  First lets define Easy, this means things are near. "Its easy to reach", "Its
-  easy to get to", ... For me, code is easy to read the coherent code is
-  implemented near to each other. Consider the following.
+  First, let us define “easy.” Ease is often relative to proximity or nearness:
+  “easy to reach,” “easy to access,” or “easy to get to.” In code, readability
+  becomes easier when related and coherent pieces are kept close to one another.
+  The nearer connected concepts are within the codebase, the easier the system
+  is to understand and navigate. Consider the following.
 </p>
+
 <div class="flex flex-col">
   <tt>Import Data</tt>
   <CodeSnip code={jsonImport} language="typescript" />
@@ -94,10 +123,12 @@ export const AccountPage = () => {
 </div>
 
 <p>
-  Inline is much easier to read because the data is immediately there. Compare
-  that to the import example where you have to guess what is being returned.
-  Another example would be if a screen will have different design according to
-  certain states.
+  Inline code is often easier to read because the data and behavior are
+  immediately visible. In contrast, imported abstractions may require the reader
+  to mentally trace what is being returned or executed. The same principle
+  applies to UI logic. For example, when a screen changes design based on
+  different states, keeping the relevant state logic close to the UI can make
+  the behavior easier to understand.
 </p>
 
 <CodeSnip code={differentStates} language="typescript" />
@@ -106,13 +137,16 @@ export const AccountPage = () => {
   While above is easy since the coherent components are just declared within the
   function. This would easily becomes complex. Rich Hickey, creator of clojure
   have likened code complexity as weaving ropes. When ropes are weaved its
-  difficult to know where it starts and ends. The code above is complex because:
+  difficult to know where a rope starts and ends. The code above is complex
+  because:
 </p>
 
 <ul>
   <li>Three different components are declared in one section</li>
-  <li
-    >The logic for switching components and identifying what that is not clear.</li>
+  <li>
+    The logic for switching components and identifying their states is not
+    immediately clear.
+  </li>
 </ul>
 
 <p>Refactored complex code:</p>
@@ -124,24 +158,21 @@ export const AccountPage = () => {
   grouping them. This code structure is subjectively easier to modify and read.
 </p>
 
+<h2>Final Thoughts</h2>
 <p>
-  You might have notice that I have not stated a specific way on how to achieve
-  code quality. That is because quality is subjective, however, what is
-  consistent in this kind of discussion is that our goal is to make code
-  "Simple" and "Easy". While we are familiar with these words, we need to define
-  them, but not use it as a constraint. These are only concepts, concepts are
-  meant to guide. It is up to the team to make rules that adheres to "Simple"
-  and "Easy".
+  You may notice that I have not proposed a single method for achieving code
+  quality. This is because some aspects of quality are subjective and depend on
+  the needs, constraints, and values of the team.
 </p>
 
-<h2>Rerences</h2>
-<ul>
-  <li
-    ><a href="https://www.youtube.com/watch?v=SxdOUGdseq4" target="_blank"
-      >Rich Hickey - Simple made Easy</a
-    ></li>
-  <li
-    ><a href="https://htmx.org/essays/locality-of-behaviour/" target="_blank"
-      >htmx - Locality of Behavior</a
-    ></li>
-</ul>
+<p>
+  What remains consistent, however, is the goal of reducing cognitive burden by
+  making code more “Simple” and “Easy” to understand. These terms should not be
+  treated as rigid constraints, but as guiding concepts that help teams shape
+  their own standards and practices.
+</p>
+
+<p>
+  Ultimately, it is the responsibility of the team to define rules that align
+  with their understanding of what "Simple" and "Easy" is.
+</p>

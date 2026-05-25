@@ -58,7 +58,7 @@ export const AccountPage = () => {
 `;
 </script>
 
-<h1>Code Quality, what does it mean?</h1>
+<h1>Code Quality by defining Simple and Easy</h1>
 
 <div>
   Refereces:
@@ -105,8 +105,8 @@ export const AccountPage = () => {
   to read should be one of its qualification. But what does easy mean?
 </p>
 
-<h2>Simple and Easy</h2>
-
+<h2>Easy and Simple</h2>
+<h3>Defining Easy</h3>
 <p class="mb-7">
   First, let us define “easy.” Ease is often relative to proximity or nearness:
   “easy to reach,” “easy to access,” or “easy to get to.” In code, readability
@@ -131,6 +131,7 @@ export const AccountPage = () => {
   the behavior easier to understand.
 </p>
 
+<h3>Defining Simple</h3>
 <CodeSnip code={differentStates} language="typescript" />
 
 <p>

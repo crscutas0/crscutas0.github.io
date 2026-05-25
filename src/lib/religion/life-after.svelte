@@ -1,6 +1,7 @@
 <script module>
 export const title = "Life after";
 export const date = "April 22, 2026";
+export const description = "Reflections on death, heaven, angels, and what Catholics believe about the afterlife.";
 </script>
 
 <h1>{title}</h1>

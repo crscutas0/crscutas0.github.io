@@ -3,6 +3,7 @@ import CodeSnip from "$lib/components/ui/CodeSnip.svelte";
 
 export const title = "The problem with utils";
 export const date = "April 21, 2026";
+export const description = "Why utility packages become dumping grounds and how modeling domain concepts is a better approach.";
 
 const sampleCode = `
 class MobileProvider(str, Enum):

@@ -3,6 +3,7 @@ import CodeSnip from "$lib/components/ui/CodeSnip.svelte";
 
 export const title = "SLAP - Single Level of Abstraction Principle";
 export const date = "April 20, 2026";
+export const description = "Keeping your code at consistent abstraction levels for better readability and maintainability.";
 
 const sampleCode1 = `
 def print_numbers_one_to_ten():

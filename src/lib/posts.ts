@@ -13,6 +13,7 @@ export function createPostLoader(category: string) {
       return {
         title: post.title,
         date: post.date,
+        description: post.description,
         content: post.default,
       };
     } catch (e) {

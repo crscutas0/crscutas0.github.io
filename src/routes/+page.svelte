@@ -124,6 +124,10 @@ const getClasses = (index: number) => {
 
 <svelte:head>
   <title>./crscutas</title>
+  <meta property="og:title" content="./crscutas" />
+  <meta property="og:description" content="A personal website featuring posts on development, religion, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://crscutas.vercel.app" />
 </svelte:head>
 
 <div class="min-h-screen font-mono flex flex-col p-8">

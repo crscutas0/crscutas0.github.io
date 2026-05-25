@@ -3,6 +3,7 @@ import CodeSnip from "$lib/components/ui/CodeSnip.svelte";
 
 export const title = "Code Quality";
 export const date = "2026-05-24";
+export const description = "What code quality really means, and how to make code simple and easy to read.";
 
 const jsonImport = `import { StatusHeaders } from '@/data/StatusHeaders';
   export const getAccountStatus = () => StatusHeaders;

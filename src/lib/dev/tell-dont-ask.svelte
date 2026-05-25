@@ -3,6 +3,7 @@ import CodeSnip from "$lib/components/ui/CodeSnip.svelte";
 
 export const title = "Tell, Don't Ask";
 export const date = "April 21, 2026";
+export const description = "A principle for better object-oriented design: tell objects what to do instead of asking for their data.";
 
 const sampleCode = `
 class Profile:

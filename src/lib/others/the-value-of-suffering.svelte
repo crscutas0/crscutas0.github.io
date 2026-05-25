@@ -1,6 +1,7 @@
 <script module>
   export const title = "The Value of Suffering";
   export const date = "April 21, 2026";
+  export const description = "How suffering can have meaning and purpose beyond just being something to avoid.";
 </script>
 
 <h1>The Value of Suffering</h1>

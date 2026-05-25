@@ -9,6 +9,7 @@ let { posts, category } = $props<{
 
 <svelte:head>
   <title>{category} - ./crscutas</title>
+  <meta name="description" content="Posts about {category} on crscutas." />
   <meta property="og:title" content="{category} - ./crscutas" />
   <meta property="og:description" content="Posts about {category} on crscutas." />
 </svelte:head>

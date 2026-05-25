@@ -9,6 +9,7 @@
 
 <svelte:head>
   <title>about - ./crscutas</title>
+  <meta name="description" content="About crscutas - a personal blog by Cristopher Cutas." />
   <meta property="og:title" content="about - ./crscutas" />
   <meta property="og:description" content="About crscutas - a personal blog by Cristopher Cutas." />
 </svelte:head>

@@ -33,6 +33,7 @@ const things = [
 
 <svelte:head>
   <title>top things - ./crscutas</title>
+  <meta name="description" content="Top things I like - tools, games, and gadgets." />
   <meta property="og:title" content="top things - ./crscutas" />
   <meta property="og:description" content="Top things I like - tools, games, and gadgets." />
 </svelte:head>

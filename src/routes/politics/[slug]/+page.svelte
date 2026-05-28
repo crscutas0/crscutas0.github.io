@@ -4,4 +4,3 @@ let { data } = $props();
 </script>
 
 <CategoryPost data={data} />
-

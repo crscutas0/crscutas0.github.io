@@ -124,9 +124,13 @@ const getClasses = (index: number) => {
 
 <svelte:head>
   <title>./crscutas</title>
-  <meta name="description" content="A personal website featuring posts on development, religion, and more." />
+  <meta
+    name="description"
+    content="A personal website featuring posts on development, religion, and more." />
   <meta property="og:title" content="./crscutas" />
-  <meta property="og:description" content="A personal website featuring posts on development, religion, and more." />
+  <meta
+    property="og:description"
+    content="A personal website featuring posts on development, religion, and more." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://crscutas.vercel.app" />
 </svelte:head>
@@ -137,8 +141,7 @@ const getClasses = (index: number) => {
     tabindex="0"
     class="flex-1 focus:outline-none"
     bind:this={menuEl}
-    on:keydown={cycle}
-  >
+    on:keydown={cycle}>
     <div class="grid grid-cols-[auto_auto_1fr] gap-y-2 space-x-15">
       <div class="text-5xl tracking-tighter text-[#e8dfc7]">
         <span class="text-[#d5b87c]">❯</span>
@@ -163,8 +166,7 @@ const getClasses = (index: number) => {
                 href={item.href}
                 class="group flex items-center border-l-4 py-2 pl-8 transition-all duration-200
                 {getClasses(index)}"
-                on:click|preventDefault={() => handleMenuClick(index)}
-              >
+                on:click|preventDefault={() => handleMenuClick(index)}>
                 <span class="flex-1">{item.label}</span>
               </a>
             {/each}
@@ -183,8 +185,7 @@ const getClasses = (index: number) => {
               on:click={(e) => {
                 e.preventDefault();
                 handleCategoryClick(category);
-              }}
-            >
+              }}>
               <span class="flex-1">{category.label}</span>
             </a>
           {/each}
@@ -197,24 +198,20 @@ const getClasses = (index: number) => {
     <div class="flex items-center gap-1.5">
       <kbd
         class="px-2 py-1 bg-[#2a2a2a] border border-[#3a3a3a] rounded text-xs text-[#888]"
-        >↑</kbd
-      >
+        >↑</kbd>
       <kbd
         class="px-2 py-1 bg-[#2a2a2a] border border-[#3a3a3a] rounded text-xs text-[#888]"
-        >↓</kbd
-      >
+        >↓</kbd>
       <span class="text-[#444]">or</span>
       <kbd
         class="px-2 py-1 bg-[#2a2a2a] border border-[#3a3a3a] rounded text-xs text-[#888]"
-        >Tab</kbd
-      >
+        >Tab</kbd>
     </div>
     <span class="mx-2 text-[#333]">•</span>
     <span>
       <kbd
         class="px-2 py-1 bg-[#2a2a2a] border border-[#3a3a3a] rounded text-xs text-[#888]"
-        >Enter</kbd
-      >
+        >Enter</kbd>
       to select
     </span>
     {#if currentMenu === "posts"}
@@ -222,8 +219,7 @@ const getClasses = (index: number) => {
       <span>
         <kbd
           class="px-2 py-1 bg-[#2a2a2a] border border-[#3a3a3a] rounded text-xs text-[#888]"
-          >Backspace</kbd
-        >
+          >Backspace</kbd>
         to go back
       </span>
     {/if}

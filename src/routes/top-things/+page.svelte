@@ -33,17 +33,20 @@ const things = [
 
 <svelte:head>
   <title>top things - ./crscutas</title>
-  <meta name="description" content="Top things I like - tools, games, and gadgets." />
+  <meta
+    name="description"
+    content="Top things I like - tools, games, and gadgets." />
   <meta property="og:title" content="top things - ./crscutas" />
-  <meta property="og:description" content="Top things I like - tools, games, and gadgets." />
+  <meta
+    property="og:description"
+    content="Top things I like - tools, games, and gadgets." />
 </svelte:head>
 
 <svelte:window
   onkeydown={(e) => {
     if (e.key === "Backspace" && (e.target as HTMLElement).tagName !== "INPUT")
       window.location.href = "/";
-  }}
-/>
+  }} />
 
 <div class="min-h-screen bg-[#0d0d0d] font-mono p-8 flex justify-center">
   <article class="max-w-4xl w-full">

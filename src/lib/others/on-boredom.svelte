@@ -1,7 +1,8 @@
 <script module>
-  export const title = "On Boredom";
-  export const date = "April 21, 2026";
-  export const description = "Why boredom is valuable and what it can teach us about ourselves.";
+export const title = "On Boredom";
+export const date = "April 21, 2026";
+export const description =
+  "Why boredom is valuable and what it can teach us about ourselves.";
 </script>
 
 <h1>On Boredom</h1>

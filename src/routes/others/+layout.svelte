@@ -5,6 +5,7 @@ import CategoryLayout from "$lib/components/CategoryLayout.svelte";
 let { children } = $props();
 </script>
 
-<CategoryLayout {posts} category="others">
+<CategoryLayout posts={posts} category="others">
   {@render children()}
 </CategoryLayout>
+

@@ -48,4 +48,10 @@ export const religionPosts: Post[] = [
 
 export const politicsPosts: Post[] = [];
 
-export const othersPosts: Post[] = [];
+export const othersPosts: Post[] = [
+  {
+    category: "outlook",
+    slug: "i-dont-know",
+    title: "I don't know",
+  },
+];

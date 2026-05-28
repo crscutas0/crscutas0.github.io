@@ -14,7 +14,7 @@ const postCategories = [
   { label: "dev", href: "/dev" },
   { label: "religion", href: "/religion" },
   // { label: "politics", href: "/politics" },
-  // { label: "others", href: "/others" },
+  { label: "others", href: "/others" },
 ];
 
 const menuItems = [

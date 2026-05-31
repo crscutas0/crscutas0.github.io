@@ -104,3 +104,10 @@ const markdownStructure = `
 </p>
 
 <CodeSnip code={markdownStructure} language="markdown" />
+
+<h2>Final Thoughts</h2>
+
+<p>
+  Documentation when written to compliment the rest of the project resource will
+  not become a burden to maintain.
+</p>

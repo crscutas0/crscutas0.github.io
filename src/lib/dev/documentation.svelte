@@ -13,8 +13,7 @@ const commentSample = `
 */
 func EncodeUrlIds(id int[]) string {
   ...
-}
-`;
+}`;
 
 const markdownStructure = `
 ├── src
@@ -108,6 +107,8 @@ const markdownStructure = `
 <h2>Final Thoughts</h2>
 
 <p>
-  Documentation when written to compliment the rest of the project resource will
-  not become a burden to maintain.
+  I think documentation becomes painful to do when it just echoes what has been
+  written in code. When we do it out of compliance instead of understanding when
+  it is necessary. If we create guidelines / standards for documentation would
+  probably lead to an improved writing and maintenance experience.
 </p>

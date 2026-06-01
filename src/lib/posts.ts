@@ -26,6 +26,11 @@ export function createPostLoader(category: string) {
 export const devPosts: Post[] = [
   {
     category: "docs",
+    slug: "readme-levels",
+    title: "Readme Levels",
+  },
+  {
+    category: "docs",
     slug: "documentation",
     title: "Documetation",
   },

@@ -65,8 +65,7 @@ export const description =
 
   <p>
     So while it may be comforting to imagine our loved ones as angels watching
-    over us, our hope is actually greater than that. We are not meant to become
-    angels—we are meant to be fully human, restored and perfected in the
-    presence of God.
+    over us. We are not meant to become angels, we are meant to be fully human,
+    restored and perfected in the presence of God.
   </p>
 </div>

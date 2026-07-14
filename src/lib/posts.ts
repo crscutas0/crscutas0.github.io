@@ -25,6 +25,11 @@ export function createPostLoader(category: string) {
 
 export const devPosts: Post[] = [
   {
+    category: "code",
+    slug: "another-option",
+    title: "Another Option",
+  },
+  {
     category: "docs",
     slug: "readme-levels",
     title: "Readme Levels",
@@ -54,11 +59,16 @@ export const devPosts: Post[] = [
 
 export const religionPosts: Post[] = [
   {
+    category: "beliefs",
+    slug: "is-god-real",
+    title: "Is God real?",
+  },
+  {
     category: "outlook",
     slug: "i-dont-know",
     title: "I don't know",
   },
-  { category: "Beliefs", slug: "life-after", title: "Life after" },
+  { category: "beliefs", slug: "life-after", title: "Life after" },
 ];
 
 export const politicsPosts: Post[] = [];

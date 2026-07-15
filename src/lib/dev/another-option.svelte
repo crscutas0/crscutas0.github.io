@@ -55,9 +55,7 @@ const textInput =
   `/script>
 
 <div class="mb-4">
-	{#if label}
-		<label for={id}>{label}</label>
-	{/if}
+  <label for={id}>{label}</label>
 
 	<input
 		{id}

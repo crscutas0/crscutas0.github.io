@@ -173,8 +173,8 @@ const textInput =
 <p>
   Naming variables is up there in difficulties of programming. Although minor
   but I find certain practices a source of slight irritation. Say for example
-  "is_active", does having the prefix "is" make it more "active"? Or AccountType
-  as suppose to AccountTypeEnum.
+  "is_active", does having the prefix "is" make it more "active"? Or
+  AccountTypeEnum as suppose to AccountType.
 </p>
 
 <p>
@@ -202,7 +202,11 @@ const textInput =
   CustomerProfile.
 </p>
 
+<h2>Closing</h2>
+
 <p>
-  These are not hard rules, but just things consider. As the title says, let's
-  consider this as "Another Option".
+  The article does is not oppose to common wisdom, but on the common
+  implementation suggested by these common wisdom. It also does suggest hard
+  rules, but rather some ideas to consider. As the title says, let's consider
+  this as "Another Option".
 </p>

@@ -203,8 +203,8 @@ const textInput =
 <h2>Closing</h2>
 
 <p>
-  The article does is not oppose to common wisdom, but on the common
-  implementation suggested by these common wisdom. It also does suggest hard
+  The article does not oppose common wisdom. Instead, it questions the common
+  ways these principles are implemented in practice. It also does suggest hard
   rules, but rather some ideas to consider. As the title says, let's consider
   this as "Another Option".
 </p>

@@ -26,6 +26,11 @@ export function createPostLoader(category: string) {
 export const devPosts: Post[] = [
   {
     category: "code",
+    slug: "dont-write-comments",
+    title: "Don't write comments",
+  },
+  {
+    category: "code",
     slug: "another-option",
     title: "Another Option",
   },
